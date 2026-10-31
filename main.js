@@ -18,7 +18,6 @@ function createInfoBlock(label, value, url) {
     labelText.className = "label"
     labelText.textContent = label
 
-    // у неизвестной локации в API нет ссылки
     const valueText = url ? createLink(url) : document.createElement("span")
     valueText.className = "value"
     valueText.textContent = value
